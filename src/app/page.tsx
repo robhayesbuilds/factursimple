@@ -10,10 +10,24 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // TODO: Connect to email service
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    setSubmitted(true)
-    setLoading(false)
+    
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      })
+      
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        alert('Erreur lors de l\'inscription. Veuillez réessayer.')
+      }
+    } catch {
+      alert('Erreur de connexion. Veuillez réessayer.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (

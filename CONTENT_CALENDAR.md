@@ -29,10 +29,10 @@
   - Keywords: logiciel facture micro-entreprise, meilleur logiciel facturation
   - ~2800 words
 
-### Wednesday, Feb 6
-- [ ] **Article 4**: Mentions Légales Obligatoires sur une Facture Auto-Entrepreneur
+### Wednesday, Feb 6 ✅ (Done Early: Feb 4)
+- [x] **Article 4**: Mentions Légales Obligatoires sur une Facture Auto-Entrepreneur
   - Keywords: mentions légales facture, facture conforme auto-entrepreneur
-  - Target: 1500 words
+  - Actual: ~1800 words
   - Focus: Checklist pratique des mentions obligatoires
 
 ### Friday, Feb 8

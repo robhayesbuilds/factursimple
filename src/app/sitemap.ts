@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // New SEO-optimized articles (Feb 4, 2026)
     {
+      url: `${baseUrl}/blog/mentions-legales-facture-auto-entrepreneur`,
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/facturation-electronique-auto-entrepreneur`,
       lastModified: new Date('2026-02-04'),
       changeFrequency: 'monthly',

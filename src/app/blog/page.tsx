@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'mentions-legales-facture-auto-entrepreneur',
+    title: 'Mentions Légales Facture Auto-Entrepreneur 2026 : La Checklist Complète',
+    excerpt: 'Toutes les mentions obligatoires sur une facture auto-entrepreneur en 2026. Checklist complète, exemples concrets et erreurs à éviter.',
+    date: '2026-02-04',
+    readTime: '7 min',
+    category: 'Guide Pratique',
+  },
+  {
     slug: 'facturation-electronique-auto-entrepreneur',
     title: 'Facturation Électronique Auto-Entrepreneur : Le Guide Pratique 2026',
     excerpt: 'Vous êtes auto-entrepreneur ? Découvrez toutes vos obligations pour la facturation électronique : calendrier, solutions abordables, et checklist de préparation.',

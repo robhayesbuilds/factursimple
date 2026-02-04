@@ -21,7 +21,10 @@ export default function Home() {
           <div className="text-2xl font-bold text-primary">FacturSimple</div>
           <div className="hidden space-x-8 text-sm text-muted-foreground md:flex">
             <a href="/generateur-facture" className="text-primary font-medium hover:text-primary/80">
-              🧾 Générateur Gratuit
+              🧾 Factures
+            </a>
+            <a href="/generateur-devis" className="text-primary font-medium hover:text-primary/80">
+              📋 Devis
             </a>
             <a href="#comment-ca-marche" className="hover:text-primary">
               Comment ça marche
@@ -44,23 +47,32 @@ export default function Home() {
       {/* Trust badges below hero */}
       <TrustBadges />
 
-      {/* Free Tool Banner */}
+      {/* Free Tools Banner */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-8">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold text-white">
-                🧾 Générateur de Facture Gratuit
-              </h3>
-              <p className="text-blue-100 mt-1">
-                Créez vos factures conformes 2026 en quelques clics. 100% gratuit, sans compte.
-              </p>
-            </div>
+          <div className="text-center mb-4">
+            <h3 className="text-xl font-bold text-white">
+              🎁 Outils Gratuits - Sans Inscription
+            </h3>
+            <p className="text-blue-100 mt-1">
+              Créez vos documents conformes 2026 en quelques clics
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
               href="/generateur-facture"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition-colors hover:bg-blue-50 whitespace-nowrap"
             >
-              Créer une facture
+              🧾 Générateur de Factures
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a 
+              href="/generateur-devis"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 border-2 border-white px-6 py-3 font-semibold text-white transition-colors hover:bg-white/20 whitespace-nowrap"
+            >
+              📋 Générateur de Devis
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -140,8 +152,9 @@ export default function Home() {
             <div className="mb-4 text-xl font-bold text-background md:mb-0">
               FacturSimple
             </div>
-            <div className="flex gap-6 text-sm">
-              <a href="/generateur-facture" className="hover:text-background">Générateur Gratuit</a>
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <a href="/generateur-facture" className="hover:text-background">Factures</a>
+              <a href="/generateur-devis" className="hover:text-background">Devis</a>
               <a href="/blog" className="hover:text-background">Blog</a>
               <a href="#" className="hover:text-background">Mentions légales</a>
               <a href="#" className="hover:text-background">CGV</a>

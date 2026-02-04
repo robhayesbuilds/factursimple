@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // New SEO-optimized articles (Feb 4, 2026)
     {
+      url: `${baseUrl}/blog/tva-auto-entrepreneur-2026`,
+      lastModified: new Date('2026-02-04'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/e-reporting-micro-entreprise`,
       lastModified: new Date('2026-02-04'),
       changeFrequency: 'monthly',

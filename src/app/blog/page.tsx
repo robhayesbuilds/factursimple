@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'tva-auto-entrepreneur-2026',
+    title: 'TVA Auto-Entrepreneur 2026 : Seuils, Franchise et Facturation Électronique',
+    excerpt: 'Guide complet sur la TVA pour les auto-entrepreneurs : seuils de franchise, passage à la TVA, mentions obligatoires et lien avec la réforme e-invoicing.',
+    date: '2026-02-04',
+    readTime: '11 min',
+    category: 'Fiscalité',
+  },
+  {
     slug: 'e-reporting-micro-entreprise',
     title: 'E-Reporting 2026 : Ce Que les Micro-Entreprises Doivent Savoir',
     excerpt: 'Vous vendez aux particuliers ? Découvrez vos obligations d\'e-reporting : qui est concerné, calendrier, obligations B2C, et comment se préparer.',

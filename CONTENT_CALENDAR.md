@@ -49,11 +49,11 @@
 
 ## 📅 Week 2: Feb 11-18, 2026
 
-### Monday, Feb 11
-- [ ] **Article 6**: TVA Auto-Entrepreneur 2026 : Seuils, Franchise et Facturation
+### Monday, Feb 11 ✅ (Done Early: Feb 4)
+- [x] **Article 6**: TVA Auto-Entrepreneur 2026 : Seuils, Franchise et Facturation Électronique
   - Keywords: TVA auto-entrepreneur, franchise TVA 2026, seuil TVA
-  - Target: 2000 words
-  - Focus: Clarify TVA rules + how they interact with e-invoicing
+  - Actual: ~2200 words (target was 2000)
+  - Focus: TVA thresholds, franchise rules, interaction with e-invoicing reform
 
 ### Wednesday, Feb 13
 - [ ] **Article 7**: Créer un Devis Conforme en Auto-Entrepreneur

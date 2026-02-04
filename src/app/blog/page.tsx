@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'faq-facture-electronique',
+    title: 'FAQ Facture Électronique 2026 : Toutes les Réponses à Vos Questions',
+    excerpt: 'Suis-je concerné ? C\'est quoi Factur-X ? Combien ça coûte ? Réponses claires aux 10 questions les plus fréquentes des micro-entrepreneurs.',
+    date: '2026-02-04',
+    readTime: '8 min',
+    category: 'FAQ',
+  },
+  {
     slug: 'comparatif-logiciels-facturation',
     title: 'Comparatif Logiciels de Facturation 2026 : Lequel Choisir ?',
     excerpt: 'Pennylane, Tiime, Indy, Freebe... On compare tout pour vous aider à choisir le bon outil avant septembre 2026.',

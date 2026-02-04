@@ -42,6 +42,7 @@ export default function Home() {
             <a href="#fonctionnalites" className="hover:text-primary-600">Fonctionnalités</a>
             <a href="#tarifs" className="hover:text-primary-600">Tarifs</a>
             <a href="#faq" className="hover:text-primary-600">FAQ</a>
+            <a href="/blog" className="hover:text-primary-600">Blog</a>
           </div>
         </div>
       </nav>

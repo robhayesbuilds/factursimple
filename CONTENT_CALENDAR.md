@@ -71,11 +71,11 @@
 - [ ] **Optimization Pass**: Review all articles for internal linking
 - [ ] **Meta Descriptions**: Audit and optimize all meta tags
 
-### Monday, Feb 18
-- [ ] **Article 9**: Factur-X : Le Format Expliqué Simplement
+### Monday, Feb 18 ✅ (Done Early: Feb 4)
+- [x] **Article 9**: Factur-X : Le Format de Facture Électronique Expliqué Simplement
   - Keywords: Factur-X format, facture PDF XML, norme Factur-X
-  - Target: 1400 words
-  - Focus: Technical but accessible explanation
+  - Actual: ~2500 words (target was 1400)
+  - Focus: Technical but accessible explanation, 5 profil levels, advantages, adoption guide
 
 ---
 

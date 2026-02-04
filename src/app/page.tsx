@@ -29,6 +29,9 @@ export default function Home() {
             <a href="/calculateur-penalites" className="text-orange-600 font-medium hover:text-orange-700">
               ⚠️ Pénalités
             </a>
+            <a href="/calculateur-tva" className="text-green-600 font-medium hover:text-green-700">
+              🧮 TVA
+            </a>
             <a href="/blog" className="hover:text-primary">
               📚 Blog
             </a>
@@ -88,6 +91,15 @@ export default function Home() {
               className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-600 whitespace-nowrap"
             >
               ⚠️ Calcul Pénalités Retard
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a 
+              href="/calculateur-tva"
+              className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-green-600 whitespace-nowrap"
+            >
+              🧮 Calculateur TVA
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -180,6 +192,7 @@ export default function Home() {
               <a href="/generateur-facture" className="hover:text-background">Factures</a>
               <a href="/generateur-devis" className="hover:text-background">Devis</a>
               <a href="/calculateur-penalites" className="hover:text-background">Pénalités</a>
+              <a href="/calculateur-tva" className="hover:text-background">TVA</a>
               <a href="/checklist-2026" className="hover:text-background">Checklist 2026</a>
               <a href="/blog" className="hover:text-background">Blog</a>
               <a href="#" className="hover:text-background">Mentions légales</a>

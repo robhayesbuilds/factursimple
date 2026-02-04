@@ -35,11 +35,11 @@
   - Actual: ~1800 words
   - Focus: Checklist pratique des mentions obligatoires
 
-### Friday, Feb 8
-- [ ] **Article 5**: E-Reporting 2026 : Ce Que les Micro-Entreprises Doivent Savoir
+### Friday, Feb 8 ✅ (Done Early: Feb 4)
+- [x] **Article 5**: E-Reporting 2026 : Ce Que les Micro-Entreprises Doivent Savoir
   - Keywords: e-reporting entreprise, déclaration e-reporting
-  - Target: 1800 words
-  - Focus: B2C obligations, calendrier, process
+  - Actual: ~2100 words
+  - Focus: B2C obligations, calendrier, process, case studies
 
 ### Saturday, Feb 9
 - [ ] **Social Media**: Create Twitter/X thread from Article 1 (auto-entrepreneur)

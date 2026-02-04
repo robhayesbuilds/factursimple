@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'e-reporting-micro-entreprise',
+    title: 'E-Reporting 2026 : Ce Que les Micro-Entreprises Doivent Savoir',
+    excerpt: 'Vous vendez aux particuliers ? Découvrez vos obligations d\'e-reporting : qui est concerné, calendrier, obligations B2C, et comment se préparer.',
+    date: '2026-02-04',
+    readTime: '9 min',
+    category: 'E-Reporting',
+  },
+  {
     slug: 'mentions-legales-facture-auto-entrepreneur',
     title: 'Mentions Légales Facture Auto-Entrepreneur 2026 : La Checklist Complète',
     excerpt: 'Toutes les mentions obligatoires sur une facture auto-entrepreneur en 2026. Checklist complète, exemples concrets et erreurs à éviter.',

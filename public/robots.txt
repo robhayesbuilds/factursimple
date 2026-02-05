@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://factursimple.fr/sitemap.xml
+Sitemap: https://factursimple.vercel.app/sitemap.xml

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'cgv-auto-entrepreneur',
+    title: 'CGV Auto-Entrepreneur : Guide Complet 2026',
+    excerpt: 'Tout savoir sur les Conditions Générales de Vente (CGV) pour les auto-entrepreneurs. Obligations légales, mentions obligatoires et générateur gratuit.',
+    date: '2026-02-05',
+    readTime: '8 min',
+    category: 'Guide Pratique',
+  },
+  {
     slug: 'factur-x-format',
     title: 'Factur-X : Le Format de Facture Électronique Expliqué Simplement',
     excerpt: 'Découvrez Factur-X, le format hybride PDF/XML au cœur de la facturation électronique 2026. Guide complet : niveaux de conformité, avantages, et comment l\'adopter.',

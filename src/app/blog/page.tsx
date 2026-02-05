@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { IconArrowRight, IconClock, IconBook } from "@tabler/icons-react"
 
 export const metadata: Metadata = {
   title: 'Blog - FacturSimple | Actualités facturation électronique',
@@ -113,59 +116,101 @@ const articles = [
   },
 ]
 
+const categoryColors: Record<string, string> = {
+  'Technique': 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+  'Guide Pratique': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  'Guide': 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  'Fiscalité': 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  'E-Reporting': 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+  'Réglementation': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  'Comparatif': 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+  'FAQ': 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
+}
+
+function formatDate(dateString: string) {
+  const date = new Date(dateString)
+  return date.toLocaleDateString('fr-FR', { 
+    day: 'numeric', 
+    month: 'long', 
+    year: 'numeric' 
+  })
+}
+
 export default function BlogPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
       {/* Navigation */}
-      <nav className="container mx-auto px-6 py-4 border-b border-slate-200 dark:border-slate-700">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-primary-600">
-            FacturSimple
-          </Link>
-          <div className="flex space-x-8 text-sm text-slate-600 dark:text-slate-300">
-            <Link href="/#fonctionnalites" className="hover:text-primary-600">Fonctionnalités</Link>
-            <Link href="/#tarifs" className="hover:text-primary-600">Tarifs</Link>
-            <Link href="/blog" className="text-primary-600 font-medium">Blog</Link>
+      <nav className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-700/80 dark:bg-slate-900/80">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="text-2xl font-bold text-primary">
+              FacturSimple
+            </Link>
+            <div className="flex items-center gap-6 text-sm text-slate-600 dark:text-slate-300">
+              <Link href="/#fonctionnalites" className="hover:text-primary transition-colors">Fonctionnalités</Link>
+              <Link href="/#tarifs" className="hover:text-primary transition-colors">Tarifs</Link>
+              <Link href="/blog" className="text-primary font-medium">Blog</Link>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Header */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Blog FacturSimple
+      <section className="container mx-auto px-6 py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <Badge variant="secondary" className="mb-6 gap-1.5 rounded-full px-4 py-1.5">
+            <IconBook className="h-3.5 w-3.5" />
+            {articles.length} articles
+          </Badge>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+            Le blog FacturSimple
           </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-400">
-            Guides, actualités et conseils sur la facturation électronique en France.
+          <p className="mt-4 text-xl text-slate-600 dark:text-slate-400">
+            Guides pratiques et actualités sur la facturation électronique en France
           </p>
         </div>
       </section>
 
       {/* Articles */}
-      <section className="container mx-auto px-6 pb-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid gap-8">
+      <section className="container mx-auto px-6 pb-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid gap-6">
             {articles.map((article) => (
               <Link 
                 key={article.slug}
                 href={`/blog/${article.slug}`}
-                className="block bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-700"
               >
-                <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 mb-3">
-                  <span className="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-2 py-1 rounded text-xs font-medium">
-                    {article.category}
-                  </span>
-                  <span>{article.date}</span>
-                  <span>•</span>
-                  <span>{article.readTime} de lecture</span>
-                </div>
-                <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 hover:text-primary-600 transition-colors">
-                  {article.title}
-                </h2>
-                <p className="text-slate-600 dark:text-slate-400">
-                  {article.excerpt}
-                </p>
+                <Card className="group transition-all duration-200 hover:shadow-lg hover:border-primary/20">
+                  <CardHeader className="pb-3">
+                    <div className="flex flex-wrap items-center gap-3 text-sm">
+                      <Badge 
+                        variant="secondary" 
+                        className={`${categoryColors[article.category] || ''} border-0 font-medium`}
+                      >
+                        {article.category}
+                      </Badge>
+                      <span className="text-slate-500 dark:text-slate-400">
+                        {formatDate(article.date)}
+                      </span>
+                      <span className="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+                        <IconClock className="h-3.5 w-3.5" />
+                        {article.readTime}
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <h2 className="text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary transition-colors mb-3">
+                      {article.title}
+                    </h2>
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {article.excerpt}
+                    </p>
+                    <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span>Lire l&apos;article</span>
+                      <IconArrowRight className="h-4 w-4" />
+                    </div>
+                  </CardContent>
+                </Card>
               </Link>
             ))}
           </div>
@@ -173,32 +218,33 @@ export default function BlogPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary-600 py-12">
+      <section className="bg-primary py-16">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">
+          <h2 className="text-2xl font-bold text-white md:text-3xl">
             Préparez votre conformité avec FacturSimple
           </h2>
-          <p className="text-primary-100 mb-6">
+          <p className="mt-3 text-primary-foreground/80">
             Facturation électronique simple à partir de 9€/mois
           </p>
           <Link 
             href="/"
-            className="inline-block px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary-foreground/90"
           >
-            Rejoindre la liste d'attente →
+            Rejoindre la liste d&apos;attente
+            <IconArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-8">
+      <footer className="bg-slate-900 py-8 text-slate-400">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <Link href="/" className="text-xl font-bold text-white mb-4 md:mb-0">
+          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+            <Link href="/" className="text-xl font-bold text-white">
               FacturSimple
             </Link>
             <div className="text-sm">
-              © 2026 FacturSimple. Conçu en France 🇫🇷
+              © 2026 FacturSimple. Conçu en France
             </div>
           </div>
         </div>

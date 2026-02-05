@@ -1,5 +1,6 @@
 import { WaitlistForm } from "./waitlist-form"
 import { Badge } from "@/components/ui/badge"
+import { IconClock, IconUsers } from "@tabler/icons-react"
 
 export function HeroSection() {
   return (
@@ -10,8 +11,9 @@ export function HeroSection() {
       
       <div className="container relative mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <Badge variant="secondary" className="mb-8 rounded-full px-4 py-1.5 text-xs font-medium">
-            ⏰ Obligatoire dès septembre 2026
+          <Badge variant="secondary" className="mb-8 gap-1.5 rounded-full px-4 py-1.5 text-xs font-medium">
+            <IconClock className="h-3.5 w-3.5" />
+            Obligatoire dès septembre 2026
           </Badge>
 
           <h1 className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
@@ -25,11 +27,12 @@ export function HeroSection() {
           </p>
 
           <div className="mt-12">
-            <div className="mx-auto max-w-md rounded-2xl border bg-card/50 p-6 shadow-lg shadow-primary/5 backdrop-blur-sm">
+            <div className="mx-auto max-w-lg rounded-2xl border bg-card/80 p-6 shadow-xl shadow-primary/5 backdrop-blur-sm">
               <WaitlistForm />
-              <p className="mt-4 text-center text-sm text-muted-foreground">
-                Rejoignez +500 micro-entrepreneurs
-              </p>
+              <div className="mt-4 flex items-center justify-center gap-1.5 text-sm text-muted-foreground">
+                <IconUsers className="h-4 w-4" />
+                <span>Rejoignez +500 micro-entrepreneurs</span>
+              </div>
             </div>
           </div>
         </div>

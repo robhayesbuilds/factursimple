@@ -1,3 +1,4 @@
+import { Card, CardContent } from "@/components/ui/card"
 import {
   IconFileInvoice,
   IconCloudUpload,
@@ -42,29 +43,35 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section id="fonctionnalites" className="border-t bg-muted/30 py-24">
+    <section id="fonctionnalites" className="py-24">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight">
-            Tout ce qu&apos;il faut. Rien de plus.
+          <p className="text-sm font-semibold text-primary">Fonctionnalités</p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            Tout ce qu&apos;il faut
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            Concentrez-vous sur votre activité. On s&apos;occupe de la conformité.
+          <p className="mt-4 text-lg text-muted-foreground">
+            Concentrez-vous sur votre activité. On gère la conformité.
           </p>
         </div>
 
         <div className="mx-auto mt-16 max-w-5xl">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
-              <div key={feature.title} className="relative">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <feature.icon className="h-5 w-5 text-primary" stroke={1.5} />
-                </div>
-                <h3 className="mt-4 font-semibold">{feature.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {feature.description}
-                </p>
-              </div>
+              <Card 
+                key={feature.title} 
+                className="group relative overflow-hidden rounded-3xl border-0 bg-gradient-to-b from-muted/50 to-muted/20 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
+              >
+                <CardContent className="p-6">
+                  <div className="mb-4 inline-flex rounded-2xl bg-primary/10 p-3 transition-colors group-hover:bg-primary/20">
+                    <feature.icon className="h-6 w-6 text-primary" stroke={1.5} />
+                  </div>
+                  <h3 className="font-semibold">{feature.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

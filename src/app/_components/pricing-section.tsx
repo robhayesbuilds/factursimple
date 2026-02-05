@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { IconCheck } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
 
@@ -31,50 +33,68 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id="tarifs" className="py-24">
+    <section id="tarifs" className="bg-muted/30 py-24">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight">
-            Tarifs simples
+          <p className="text-sm font-semibold text-primary">Tarifs</p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            Simple et transparent
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            Pas de frais cachés. Pennylane = 99€. Nous = 9€.
+          <p className="mt-4 text-lg text-muted-foreground">
+            Pennylane = 99€. Nous = 9€. Sans surprise.
           </p>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-4xl gap-8 lg:grid-cols-2">
           {plans.map((plan) => (
-            <div
+            <Card
               key={plan.name}
               className={cn(
-                "rounded-2xl border p-8",
-                plan.popular && "border-primary bg-primary/5"
+                "relative rounded-3xl transition-all duration-300",
+                plan.popular 
+                  ? "border-2 border-primary bg-gradient-to-b from-primary/5 to-transparent shadow-xl shadow-primary/10" 
+                  : "hover:shadow-lg"
               )}
             >
               {plan.popular && (
-                <p className="text-sm font-medium text-primary">Populaire</p>
+                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-4">
+                  Populaire
+                </Badge>
               )}
-              <h3 className="mt-2 text-lg font-semibold">{plan.name}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{plan.description}</p>
-              <p className="mt-6">
-                <span className="text-4xl font-bold">{plan.price}€</span>
-                <span className="text-muted-foreground">/mois</span>
-              </p>
-              <ul className="mt-8 space-y-3">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm">
-                    <IconCheck className="h-4 w-4 text-primary" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <Button
-                className="mt-8 w-full"
-                variant={plan.popular ? "default" : "outline"}
-              >
-                Rejoindre la liste
-              </Button>
-            </div>
+              <CardHeader className="pb-4 pt-8">
+                <h3 className="text-xl font-semibold">{plan.name}</h3>
+                <p className="text-sm text-muted-foreground">{plan.description}</p>
+                <div className="mt-6 flex items-baseline gap-1">
+                  <span className="text-5xl font-bold tracking-tight">{plan.price}</span>
+                  <span className="text-2xl font-semibold text-muted-foreground">€</span>
+                  <span className="ml-1 text-muted-foreground">/mois</span>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-4">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3 text-sm">
+                      <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary/10">
+                        <IconCheck className="h-3 w-3 text-primary" stroke={3} />
+                      </div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+              <CardFooter className="pt-4">
+                <Button
+                  className={cn(
+                    "w-full rounded-xl",
+                    plan.popular && "shadow-lg shadow-primary/20"
+                  )}
+                  size="lg"
+                  variant={plan.popular ? "default" : "outline"}
+                >
+                  Rejoindre la liste
+                </Button>
+              </CardFooter>
+            </Card>
           ))}
         </div>
       </div>

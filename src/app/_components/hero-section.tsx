@@ -3,35 +3,34 @@ import { Badge } from "@/components/ui/badge"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
-      <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/5 blur-[100px]" />
+    <section className="relative overflow-hidden py-20 md:py-32">
+      {/* Gradient orbs */}
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-br from-primary/20 via-primary/5 to-transparent blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 right-0 h-[400px] w-[400px] rounded-full bg-gradient-to-tl from-blue-500/10 to-transparent blur-3xl" />
       
-      <div className="container mx-auto px-6 py-24 md:py-32">
+      <div className="container relative mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <Badge variant="secondary" className="mb-6">
-            Obligatoire dès septembre 2026
+          <Badge variant="secondary" className="mb-8 rounded-full px-4 py-1.5 text-xs font-medium">
+            ⏰ Obligatoire dès septembre 2026
           </Badge>
 
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
             La facturation électronique{" "}
-            <span className="text-primary">simple</span>
+            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text">simple</span>
           </h1>
           
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">
+          <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             Créez des factures conformes Factur-X sans vous ruiner.
-            <br className="hidden sm:block" />
             À partir de <span className="font-semibold text-foreground">9€/mois</span>.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <div className="w-full max-w-sm">
+          <div className="mt-12">
+            <div className="mx-auto max-w-md rounded-2xl border bg-card/50 p-6 shadow-lg shadow-primary/5 backdrop-blur-sm">
               <WaitlistForm />
+              <p className="mt-4 text-center text-sm text-muted-foreground">
+                Rejoignez +500 micro-entrepreneurs
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground">
-              +500 micro-entrepreneurs inscrits
-            </p>
           </div>
         </div>
       </div>

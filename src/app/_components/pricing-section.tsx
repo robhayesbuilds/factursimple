@@ -1,116 +1,81 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { IconCheck } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
-import { IconCheck, IconSparkles } from "@tabler/icons-react"
 
 const plans = [
   {
     name: "Solo",
-    description: "Pour les auto-entrepreneurs",
     price: "9",
-    popular: false,
+    description: "Pour les auto-entrepreneurs",
     features: [
-      "Jusqu'à 30 factures/mois",
-      "Format Factur-X conforme",
-      "E-reporting automatique",
-      "Réception illimitée",
-      "Support par email",
+      "30 factures/mois",
+      "Format Factur-X",
+      "E-reporting auto",
+      "Support email",
     ],
+    popular: false,
   },
   {
     name: "Pro",
-    description: "Pour les micro-entreprises actives",
     price: "19",
-    popular: true,
+    description: "Pour les micro-entreprises actives",
     features: [
       "Factures illimitées",
-      "Tout du plan Solo",
       "Devis et avoirs",
       "Suivi des paiements",
       "Support prioritaire",
     ],
+    popular: true,
   },
 ]
 
 export function PricingSection() {
   return (
-    <section id="tarifs" className="bg-muted/30 py-20">
+    <section id="tarifs" className="py-24">
       <div className="container mx-auto px-6">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-4 text-center text-3xl font-bold tracking-tight text-foreground">
-            Un prix juste pour les micro-entrepreneurs
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight">
+            Tarifs simples
           </h2>
-          <p className="mb-12 text-center text-lg text-muted-foreground">
-            Pas de frais cachés. Pas de prix qui explose avec la croissance.
+          <p className="mt-4 text-muted-foreground">
+            Pas de frais cachés. Pennylane = 99€. Nous = 9€.
           </p>
+        </div>
 
-          <div className="mx-auto grid max-w-3xl gap-6 md:grid-cols-2">
-            {plans.map((plan) => (
-              <Card
-                key={plan.name}
-                className={cn(
-                  "relative overflow-hidden transition-all",
-                  plan.popular 
-                    ? "border-2 border-primary bg-primary text-primary-foreground shadow-xl" 
-                    : "border border-border hover:border-primary/50 hover:shadow-lg"
-                )}
+        <div className="mx-auto mt-16 grid max-w-4xl gap-8 lg:grid-cols-2">
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className={cn(
+                "rounded-2xl border p-8",
+                plan.popular && "border-primary bg-primary/5"
+              )}
+            >
+              {plan.popular && (
+                <p className="text-sm font-medium text-primary">Populaire</p>
+              )}
+              <h3 className="mt-2 text-lg font-semibold">{plan.name}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{plan.description}</p>
+              <p className="mt-6">
+                <span className="text-4xl font-bold">{plan.price}€</span>
+                <span className="text-muted-foreground">/mois</span>
+              </p>
+              <ul className="mt-8 space-y-3">
+                {plan.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-3 text-sm">
+                    <IconCheck className="h-4 w-4 text-primary" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <Button
+                className="mt-8 w-full"
+                variant={plan.popular ? "default" : "outline"}
               >
-                {plan.popular && (
-                  <div className="absolute -right-8 top-6 rotate-45 bg-amber-400 px-10 py-1 text-xs font-bold text-amber-900">
-                    <IconSparkles className="mr-1 inline h-3 w-3" />
-                    POPULAIRE
-                  </div>
-                )}
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl">{plan.name}</CardTitle>
-                  <CardDescription
-                    className={cn(plan.popular && "text-primary-foreground/80")}
-                  >
-                    {plan.description}
-                  </CardDescription>
-                  <div className="mt-4 flex items-baseline gap-1">
-                    <span className="text-5xl font-bold">{plan.price}</span>
-                    <span className="text-2xl font-semibold">€</span>
-                    <span
-                      className={cn(
-                        "text-muted-foreground",
-                        plan.popular && "text-primary-foreground/70"
-                      )}
-                    >
-                      /mois
-                    </span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="mb-8 space-y-3">
-                    {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-3 text-sm">
-                        <IconCheck 
-                          className={cn(
-                            "h-5 w-5 shrink-0",
-                            plan.popular ? "text-primary-foreground" : "text-green-500"
-                          )} 
-                          stroke={2}
-                        />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button
-                    className="w-full"
-                    size="lg"
-                    variant={plan.popular ? "secondary" : "outline"}
-                  >
-                    {plan.popular ? "Rejoindre la liste d'attente" : "Bientôt disponible"}
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <p className="mt-10 text-center text-sm text-muted-foreground">
-            Comparez : Pennylane = <span className="text-destructive font-medium">99€/mois</span> • Tiime = <span className="text-orange-500 font-medium">39€/mois</span> • FacturSimple = <span className="text-green-600 font-semibold">9€/mois</span>
-          </p>
+                Rejoindre la liste
+              </Button>
+            </div>
+          ))}
         </div>
       </div>
     </section>

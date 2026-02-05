@@ -1,54 +1,45 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-
 const faqs = [
   {
-    question: "Suis-je concerné par la réforme même en franchise de TVA ?",
+    question: "Suis-je concerné même en franchise de TVA ?",
     answer:
-      'Oui ! Toutes les entreprises assujetties à la TVA sont concernées, même celles en franchise en base. "Assujetti" signifie potentiellement redevable — donc vous êtes impacté.',
+      "Oui. Tous les assujettis à la TVA sont concernés, y compris ceux en franchise en base.",
   },
   {
     question: "Quand dois-je être prêt ?",
     answer:
-      "1er septembre 2026 : vous devez pouvoir recevoir des factures électroniques. 1er septembre 2027 : vous devez émettre vos factures au format électronique.",
+      "1er sept. 2026 : recevoir des e-factures. 1er sept. 2027 : émettre des e-factures.",
   },
   {
-    question: "Qu'est-ce que le format Factur-X ?",
+    question: "Qu'est-ce que Factur-X ?",
     answer:
-      "C'est un format hybride : un PDF lisible par l'humain + des données structurées (XML) lisibles par les logiciels. C'est le standard français pour la facturation électronique.",
+      "Un format hybride : PDF lisible + données XML structurées. Le standard français.",
   },
   {
-    question: "Puis-je continuer à utiliser Excel ou Word ?",
+    question: "Puis-je continuer avec Word/Excel ?",
     answer:
-      "Non. À partir de 2027, les factures PDF simples envoyées par email ne seront plus conformes. Vous devez utiliser une plateforme agréée et un format structuré.",
-  },
-  {
-    question: "FacturSimple sera-t-il une plateforme agréée ?",
-    answer:
-      "Nous travaillons à obtenir l'agrément PDP (Plateforme de Dématérialisation Partenaire) avant septembre 2026. En attendant, nous passerons par des partenaires agréés.",
+      "Non. Les PDF simples ne seront plus conformes à partir de 2027.",
   },
 ]
 
 export function FAQSection() {
   return (
-    <section id="faq" className="container mx-auto px-6 py-16">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground">
-          Questions fréquentes
-        </h2>
+    <section id="faq" className="border-t bg-muted/30 py-24">
+      <div className="container mx-auto px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight">
+            Questions fréquentes
+          </h2>
+        </div>
 
-        <div className="space-y-6">
-          {faqs.map((faq) => (
-            <Card key={faq.question}>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-base font-semibold">
-                  {faq.question}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">{faq.answer}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mx-auto mt-16 max-w-3xl">
+          <dl className="space-y-8">
+            {faqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-semibold">{faq.question}</dt>
+                <dd className="mt-2 text-muted-foreground">{faq.answer}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>

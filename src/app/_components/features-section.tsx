@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
 import {
   IconFileInvoice,
   IconCloudUpload,
@@ -11,72 +10,63 @@ import {
 const features = [
   {
     icon: IconFileInvoice,
-    title: "Factures Factur-X",
-    description:
-      "Créez des factures conformes en quelques clics. PDF lisible + données structurées.",
+    title: "Factur-X natif",
+    description: "PDF + données structurées. Conforme à la réforme.",
   },
   {
     icon: IconCloudUpload,
-    title: "E-reporting automatique",
-    description:
-      "Vos données transmises automatiquement à l'administration. Zéro action requise.",
+    title: "E-reporting auto",
+    description: "Transmission automatique à l'administration.",
   },
   {
     icon: IconDeviceMobile,
     title: "Mobile-first",
-    description:
-      "Créez et envoyez vos factures depuis votre téléphone, où que vous soyez.",
+    description: "Créez vos factures depuis votre téléphone.",
   },
   {
     icon: IconBolt,
-    title: "Réception incluse",
-    description:
-      "Recevez les factures électroniques de vos fournisseurs dès sept 2026.",
+    title: "Réception 2026",
+    description: "Prêt pour recevoir les e-factures fournisseurs.",
   },
   {
     icon: IconShieldLock,
-    title: "Stockage sécurisé",
-    description:
-      "Vos factures archivées 10 ans conformément à la loi. Hébergement en France.",
+    title: "Stockage 10 ans",
+    description: "Archivage conforme. Hébergé en France.",
   },
   {
     icon: IconTargetArrow,
     title: "Sans comptable",
-    description:
-      "Interface simple pour gérer seul. Pas besoin de formation ni d'expert.",
+    description: "Interface simple. Pas besoin d'expert.",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section id="fonctionnalites" className="container mx-auto px-6 py-16">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="mb-4 text-center text-3xl font-bold tracking-tight text-foreground">
-          Tout ce dont vous avez besoin. Rien de plus.
-        </h2>
-        <p className="mb-12 text-center text-lg text-muted-foreground">
-          Pas de fonctions inutiles. Juste la conformité, simplement.
-        </p>
+    <section id="fonctionnalites" className="border-t bg-muted/30 py-24">
+      <div className="container mx-auto px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight">
+            Tout ce qu&apos;il faut. Rien de plus.
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Concentrez-vous sur votre activité. On s&apos;occupe de la conformité.
+          </p>
+        </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <Card 
-              key={feature.title} 
-              className="group border border-border/50 bg-card/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg"
-            >
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                  <feature.icon className="h-6 w-6" stroke={1.5} />
+        <div className="mx-auto mt-16 max-w-5xl">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.title} className="relative">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <feature.icon className="h-5 w-5 text-primary" stroke={1.5} />
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-foreground">
-                  {feature.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <h3 className="mt-4 font-semibold">{feature.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
                   {feature.description}
                 </p>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

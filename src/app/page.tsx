@@ -1,244 +1,119 @@
+import Link from "next/link"
 import { HeroSection } from "./_components/hero-section"
-import { TrustBadges } from "./_components/trust-badges"
-import { HowItWorksSection } from "./_components/how-it-works"
 import { FeaturesSection } from "./_components/features-section"
-import { TestimonialsSection } from "./_components/testimonials-section"
-import { PricingCalculator } from "./_components/pricing-calculator"
 import { PricingSection } from "./_components/pricing-section"
 import { FAQSection } from "./_components/faq-section"
 import { CTASection } from "./_components/cta-section"
-import { OrganizationSchema, SoftwareSchema } from "./blog/_components/article-schema"
+import { Button } from "@/components/ui/button"
 import {
   IconFileInvoice,
   IconFileDescription,
-  IconAlertTriangle,
   IconCalculator,
-  IconPigMoney,
-  IconBook,
   IconChecklist,
-  IconX,
-  IconCheck,
-  IconChevronRight,
-  IconGift,
 } from "@tabler/icons-react"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Structured Data for SEO */}
-      <OrganizationSchema />
-      <SoftwareSchema />
-      
+    <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <a href="/" className="text-2xl font-bold text-primary">FacturSimple</a>
-            <div className="hidden items-center gap-6 text-sm md:flex">
-              <a href="/generateur-facture" className="flex items-center gap-1.5 font-medium text-primary hover:text-primary/80">
-                <IconFileInvoice className="h-4 w-4" />
-                Factures
-              </a>
-              <a href="/generateur-devis" className="flex items-center gap-1.5 font-medium text-primary hover:text-primary/80">
-                <IconFileDescription className="h-4 w-4" />
-                Devis
-              </a>
-              <a href="/calculateur-penalites" className="flex items-center gap-1.5 font-medium text-orange-600 hover:text-orange-700">
-                <IconAlertTriangle className="h-4 w-4" />
-                Pénalités
-              </a>
-              <a href="/calculateur-tva" className="flex items-center gap-1.5 font-medium text-green-600 hover:text-green-700">
-                <IconCalculator className="h-4 w-4" />
-                TVA
-              </a>
-              <a href="/blog" className="flex items-center gap-1.5 text-muted-foreground hover:text-primary">
-                <IconBook className="h-4 w-4" />
-                Blog
-              </a>
-              <a href="/checklist-2026" className="flex items-center gap-1.5 font-medium text-amber-600 hover:text-amber-700">
-                <IconChecklist className="h-4 w-4" />
-                Checklist
-              </a>
-            </div>
-          </div>
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto flex h-14 items-center justify-between px-6">
+          <Link href="/" className="font-bold">
+            FacturSimple
+          </Link>
+          <nav className="hidden items-center gap-6 text-sm md:flex">
+            <Link href="#fonctionnalites" className="text-muted-foreground hover:text-foreground">
+              Fonctionnalités
+            </Link>
+            <Link href="#tarifs" className="text-muted-foreground hover:text-foreground">
+              Tarifs
+            </Link>
+            <Link href="#faq" className="text-muted-foreground hover:text-foreground">
+              FAQ
+            </Link>
+            <Link href="/blog" className="text-muted-foreground hover:text-foreground">
+              Blog
+            </Link>
+          </nav>
+          <Button size="sm" asChild>
+            <Link href="#waitlist">Rejoindre</Link>
+          </Button>
         </div>
-      </nav>
+      </header>
 
-      <HeroSection />
-      <TrustBadges />
+      <main>
+        <HeroSection />
 
-      {/* Free Tools Banner */}
-      <section className="bg-gradient-to-r from-primary to-primary/80 py-10">
-        <div className="container mx-auto px-6">
-          <div className="mb-6 text-center">
-            <div className="mb-2 inline-flex items-center gap-2 text-primary-foreground/80">
-              <IconGift className="h-5 w-5" />
-              <span className="text-sm font-medium uppercase tracking-wider">Outils Gratuits</span>
-            </div>
-            <h3 className="text-2xl font-bold text-primary-foreground">
-              Créez vos documents conformes 2026
-            </h3>
-            <p className="mt-1 text-primary-foreground/80">
-              Sans inscription, téléchargement instantané
-            </p>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <a 
-              href="/generateur-facture"
-              className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-all hover:bg-white/90 hover:shadow-md"
-            >
-              <IconFileInvoice className="h-4 w-4" />
-              Générateur de Factures
-              <IconChevronRight className="h-4 w-4" />
-            </a>
-            <a 
-              href="/generateur-devis"
-              className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white/20"
-            >
-              <IconFileDescription className="h-4 w-4" />
-              Générateur de Devis
-              <IconChevronRight className="h-4 w-4" />
-            </a>
-            <a 
-              href="/calculateur-penalites"
-              className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-orange-600"
-            >
-              <IconAlertTriangle className="h-4 w-4" />
-              Pénalités de Retard
-              <IconChevronRight className="h-4 w-4" />
-            </a>
-            <a 
-              href="/calculateur-tva"
-              className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-green-600"
-            >
-              <IconCalculator className="h-4 w-4" />
-              Calculateur TVA
-              <IconChevronRight className="h-4 w-4" />
-            </a>
-            <a 
-              href="/calculateur-economies"
-              className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-emerald-600"
-            >
-              <IconPigMoney className="h-4 w-4" />
-              Comparez & Économisez
-              <IconChevronRight className="h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Section */}
-      <section className="bg-muted/30 py-20">
-        <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="mb-4 text-center text-3xl font-bold tracking-tight text-foreground">
-              La réforme arrive. Êtes-vous prêt ?
-            </h2>
-            <p className="mb-12 text-center text-lg text-muted-foreground">
-              Septembre 2026 : toutes les entreprises devront émettre des factures électroniques
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-destructive/10 text-destructive">
-                  <IconX className="h-5 w-5" />
-                </div>
-                <h3 className="mb-3 text-lg font-semibold text-foreground">
-                  Ce qui ne marchera plus
-                </h3>
-                <ul className="space-y-2.5 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <IconX className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                    Factures PDF faites sous Word ou Excel
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconX className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                    Envoi de factures par simple email
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconX className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                    Logiciels non certifiés
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconX className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                    Pas de transmission à l&apos;administration fiscale
-                  </li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl border border-green-500/20 bg-green-500/5 p-6">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-green-500/10 text-green-600">
-                  <IconCheck className="h-5 w-5" />
-                </div>
-                <h3 className="mb-3 text-lg font-semibold text-foreground">
-                  Ce qu&apos;exige la loi
-                </h3>
-                <ul className="space-y-2.5 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                    Format structuré (Factur-X, UBL, CII)
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                    Transmission via plateforme agréée
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                    E-reporting des transactions B2C
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <IconCheck className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                    Stockage conforme pendant 10 ans
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-10 text-center">
-              <p className="mb-4 text-muted-foreground">
-                Pennylane coûte <span className="font-semibold text-destructive">99€/mois</span>. Trop cher pour vos besoins simples ?
-              </p>
-              <a 
-                href="/checklist-2026"
-                className="inline-flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-6 py-3 font-semibold text-amber-700 transition-all hover:bg-amber-500/20 dark:text-amber-300"
-              >
-                <IconChecklist className="h-5 w-5" />
-                Testez votre Préparation 2026
-                <IconChevronRight className="h-4 w-4" />
-              </a>
+        {/* Trust indicators */}
+        <section className="border-y bg-muted/20 py-6">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-muted-foreground">
+              <span>Conforme 2026</span>
+              <span>Hébergé en France</span>
+              <span>Format Factur-X</span>
+              <span>RGPD</span>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div id="comment-ca-marche">
-        <HowItWorksSection />
-      </div>
+        {/* Free Tools */}
+        <section className="py-16">
+          <div className="container mx-auto px-6">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="text-sm font-medium text-primary">Outils gratuits</p>
+              <h2 className="mt-2 text-2xl font-bold tracking-tight">
+                Commencez sans inscription
+              </h2>
+            </div>
+            <div className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-4">
+              <Button variant="outline" asChild>
+                <Link href="/generateur-facture" className="gap-2">
+                  <IconFileInvoice className="h-4 w-4" />
+                  Factures
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/generateur-devis" className="gap-2">
+                  <IconFileDescription className="h-4 w-4" />
+                  Devis
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/calculateur-tva" className="gap-2">
+                  <IconCalculator className="h-4 w-4" />
+                  TVA
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/checklist-2026" className="gap-2">
+                  <IconChecklist className="h-4 w-4" />
+                  Checklist 2026
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
-      <FeaturesSection />
-      <TestimonialsSection />
-      <PricingCalculator />
-      <PricingSection />
-      <FAQSection />
-      <CTASection />
+        <FeaturesSection />
+        <PricingSection />
+        <FAQSection />
+        <CTASection />
+      </main>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-muted/30 py-12">
+      <footer className="border-t py-12">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div className="text-xl font-bold text-foreground">FacturSimple</div>
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
-              <a href="/generateur-facture" className="hover:text-foreground">Factures</a>
-              <a href="/generateur-devis" className="hover:text-foreground">Devis</a>
-              <a href="/calculateur-penalites" className="hover:text-foreground">Pénalités</a>
-              <a href="/calculateur-tva" className="hover:text-foreground">TVA</a>
-              <a href="/checklist-2026" className="hover:text-foreground">Checklist</a>
-              <a href="/blog" className="hover:text-foreground">Blog</a>
-            </div>
-            <div className="text-sm text-muted-foreground">© 2026 FacturSimple. Conçu en France 🇫🇷</div>
+            <p className="font-semibold">FacturSimple</p>
+            <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+              <Link href="/generateur-facture" className="hover:text-foreground">Factures</Link>
+              <Link href="/generateur-devis" className="hover:text-foreground">Devis</Link>
+              <Link href="/blog" className="hover:text-foreground">Blog</Link>
+            </nav>
+            <p className="text-sm text-muted-foreground">© 2026 FacturSimple</p>
           </div>
         </div>
       </footer>
-    </main>
+    </div>
   )
 }

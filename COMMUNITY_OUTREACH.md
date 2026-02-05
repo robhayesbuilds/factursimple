@@ -41,6 +41,19 @@ Validate FacturSimple with real French auto-entrepreneurs before building more f
 - **Status:** ⏳ To check
 - **Why:** Attached to major AE info site, users already researching compliance
 
+### New Discovery (Active forum threads - Feb 2026)
+
+#### 5. **CommentCaMarche Forum**
+- **URL:** https://forums.commentcamarche.net/forum/affich-38161348-la-facturation-sera-bientot-payante-pour-toutes-les-entreprises-meme-les-auto-entrepreneurs
+- **Type:** General forum with active AE discussion
+- **Status:** ⏳ Can reply (no registration needed?)
+- **Why:** Active Dec 2025 thread with REAL pain points expressed:
+  - "plusieurs centaines d'€ par an?" - cost anxiety
+  - "lourdeur administrative" - admin burden fears
+  - "travail au noir aura de beaux jours" - compliance fatigue
+- **Key insight:** One commenter mentions Chorus Pro might be free - need to address this in our messaging
+- **Action:** Reply with helpful info, mention free tools exist (us!)
+
 ### Medium Priority (General entrepreneur communities)
 
 #### 5. **Facebook Groups**

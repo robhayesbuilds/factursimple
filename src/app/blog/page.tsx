@@ -11,6 +11,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'alternative-pennylane-pas-cher',
+    title: 'Alternative Pennylane Pas Cher 2026 : Comparatif pour Auto-Entrepreneurs',
+    excerpt: 'Pennylane à 99€/mois ? Découvrez les alternatives moins chères pour les auto-entrepreneurs. Comparatif complet : Tiime, Henrri, Freebe, FacturSimple.',
+    date: '2026-02-05',
+    readTime: '10 min',
+    category: 'Comparatif',
+  },
+  {
     slug: 'cgv-auto-entrepreneur',
     title: 'CGV Auto-Entrepreneur : Guide Complet 2026',
     excerpt: 'Tout savoir sur les Conditions Générales de Vente (CGV) pour les auto-entrepreneurs. Obligations légales, mentions obligatoires et générateur gratuit.',

@@ -144,5 +144,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/blog/alternative-pennylane-pas-cher`,
+      lastModified: new Date('2026-02-05'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 }

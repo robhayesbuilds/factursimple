@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'facturation-electronique-professions-sante',
+    title: 'Facturation Électronique Infirmiers, Kinés, Professions de Santé (2026)',
+    excerpt: 'Guide complet pour IDEL, kinésithérapeutes, médecins, orthophonistes : obligations 2026, CPAM et tiers payant, e-reporting dépassements d\'honoraires.',
+    date: '2026-02-06',
+    readTime: '11 min',
+    category: 'Guide Métier',
+    featured: true,
+  },
+  {
     slug: 'facturation-electronique-professeur-particulier',
     title: 'Facturation Électronique Professeur Particulier : Guide 2026',
     excerpt: 'Professeurs particuliers, formateurs en ligne : guide complet facturation électronique 2026. CESU, plateformes (Superprof, Preply), cours entreprise et conformité.',
     date: '2026-02-06',
     readTime: '12 min',
     category: 'Guide Métier',
-    featured: true,
   },
   {
     slug: 'facturation-electronique-ecommerce-marketplace',

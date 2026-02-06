@@ -20,6 +20,22 @@ const articles = [
     featured: true,
   },
   {
+    slug: 'facturation-electronique-coiffeur-domicile',
+    title: 'Coiffeur à Domicile : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour coiffeurs et coiffeuses à domicile. Particuliers vs EHPAD/maisons de retraite, remplacement en salon, produits capillaires et conformité 2026.',
+    date: '2026-02-07',
+    readTime: '10 min',
+    category: 'Guide Métier',
+  },
+  {
+    slug: 'facturation-electronique-jardinier-paysagiste',
+    title: 'Jardinier-Paysagiste : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour jardiniers et paysagistes auto-entrepreneurs. Particuliers vs copropriétés/syndics, services à la personne (SAP), collectivités et conformité 2026.',
+    date: '2026-02-07',
+    readTime: '11 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-influenceur-createur-contenu',
     title: 'Influenceurs & Créateurs de Contenu : Guide Facturation 2026',
     excerpt: 'YouTubers, streamers Twitch, TikTokeurs, instagrameurs : ce qui change pour votre facturation. Revenus plateformes, partenariats marques et conformité.',

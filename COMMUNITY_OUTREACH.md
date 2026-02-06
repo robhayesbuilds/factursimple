@@ -91,9 +91,39 @@ Validate FacturSimple with real French auto-entrepreneurs before building more f
 - **Topics:** Business Model, Lean Startup, Growth Hacking, Admin/Legal/Compta
 - **Action:** Join, find accounting/invoicing threads
 
+### Professional Networks (NEW - Feb 6)
+
+#### 10. **Telegram "Artisans et Auto-entrepreneurs"**
+- **URL:** Search on t.me or Telegram directories
+- **Type:** Telegram group
+- **Status:** ⏳ To find & join
+- **Why:** Mentioned in copeps.fr as active artisan/AE community
+- **Action:** Search for invite link, join and engage
+
+#### 11. **CCI Info Sessions (Regional)**
+- **CCIs hosting e-invoicing events:**
+  - CCI Haute-Loire (hauteloire.cci.fr)
+  - CCI Paris Île-de-France (cci-paris-idf.fr)
+  - CCI Nice Côte d'Azur (cote-azur.cci.fr)
+  - CCI Ardèche (ardeche.cci.fr)
+- **Type:** In-person events + online resources
+- **Status:** ⏳ Check for Q&A forums or community pages
+- **Why:** Business owners attending these are actively seeking solutions
+- **Action:** Check if CCIs have forums or community sections we can participate in
+
+#### 12. **Ordre des Experts-Comptables Resources**
+- **URLs:**
+  - experts-comptables.fr (national)
+  - oec-paris.fr (Paris chapter - has free e-invoicing resources)
+- **Type:** Professional organization
+- **Status:** ⏳ To explore
+- **Why:** Accountants are gatekeepers - they recommend tools to clients
+- **Key insight:** OEC Paris has FREE diagnostic tools and resources
+- **Action:** Create content/tools that accountants would recommend to AE clients
+
 ### Medium Priority (General entrepreneur communities)
 
-#### 10. **Facebook Groups**
+#### 13. **Facebook Groups**
 - **Groups to find:**
   - "Auto-entrepreneurs et Micro-entrepreneurs"
   - "Auto-entrepreneurs France"

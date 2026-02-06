@@ -98,6 +98,19 @@ Validate FacturSimple with real French auto-entrepreneurs before building more f
 - **Status:** ⏳ To join
 - **Why:** French entrepreneur community with "concrete results" focus
 
+### French Builder/Maker Communities (NEW - Feb 6 evening)
+
+#### 10. **IndieHackers France** ⭐ HIGH PRIORITY
+- **URL:** https://www.indiehackersfrance.com/
+- **Type:** WhatsApp community + monthly Paris meetups (Indiedrinks)
+- **Status:** ⏳ To join WhatsApp
+- **Why:** THE French indiehacker/bootstrapper community. Perfect for:
+  - Validating SaaS ideas with builders
+  - Finding early adopters who understand startup problems
+  - Connecting with French SaaS founders
+- **Related:** Indie Hackers Paris Meetup (meetup.com/fr-FR/Indie-Hackers-Paris/)
+- **Action:** Join WhatsApp group, attend Indiedrinks in Paris
+
 ---
 
 #### 8. **autoentrepreneur.fr Forum** (NEW - Feb 6)

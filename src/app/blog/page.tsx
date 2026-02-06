@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'facturation-electronique-photographe-graphiste',
+    title: 'Facturation Électronique Photographe et Graphiste : Guide 2026',
+    excerpt: 'Photographes, graphistes, illustrateurs, designers : guide complet facturation électronique 2026. Cession de droits, forfaits, acomptes et conformité.',
+    date: '2026-02-06',
+    readTime: '9 min',
+    category: 'Guide Métier',
+    featured: true,
+  },
+  {
     slug: 'facturation-electronique-vtc-chauffeur-prive',
     title: 'Facturation Électronique VTC et Chauffeur Privé : Guide 2026',
     excerpt: 'Chauffeurs VTC Uber, Bolt, Kapten, Heetch : vos obligations 2026 expliquées. Mandat de facturation, e-reporting, factures fournisseurs et outils adaptés.',
     date: '2026-02-06',
     readTime: '12 min',
     category: 'Guide Métier',
-    featured: true,
   },
   {
     slug: 'facturation-electronique-livreur-uber-deliveroo',

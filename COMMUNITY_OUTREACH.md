@@ -239,10 +239,57 @@ Our blog content that provides value:
 
 ---
 
+---
+
+## 🆕 Additional Communities (Added Feb 6, 2026)
+
+### Slack Communities (via followtribes.io research)
+
+These are startup/scale-up focused but members may know auto-entrepreneurs:
+
+#### 14. **CS Francophone** (Customer Success)
+- **Slack:** csm-paris.slack.com
+- **Signup:** https://airtable.com/shrEBt24jSYJDdUT8
+- **Members:** 842
+- **Why relevant:** CS pros often advise SMB clients on tools; could refer AEs
+- **Action:** Join, mention FacturSimple when tool recommendations come up
+
+#### 15. **Business Operations Network**
+- **Type:** Slack for Ops teams at French startups
+- **Members:** 100s of startups (Payfit, Doctolib, etc.)
+- **Why relevant:** Ops people help onboard vendors/freelancers, influence tool choices
+- **Action:** Find invite link, engage on admin/tooling topics
+
+### Additional Resources Found
+
+#### 16. **Freelicious.fr** - Freelance Media
+- **URL:** https://www.freelicious.fr/
+- **Type:** Media + community directory
+- **Why relevant:** Directory of freelance resources, could list FacturSimple
+- **Action:** Submit to their annuaire, contribute guest content
+
+#### 17. **techcommunities.fr** - French Tech Community Index
+- **URL:** https://techcommunities.fr/
+- **Type:** Directory of French tech communities
+- **Why relevant:** Comprehensive list of Slack/Discord communities by topic
+- **Action:** Browse for entrepreneur/freelance focused groups
+
+#### 18. **Shine.fr Blog Community List**
+- **URL:** https://www.shine.fr/blog/communautes-independants/
+- **Type:** Curated list of freelance communities
+- **Why relevant:** Shine serves freelancers, their recommendations are quality
+- **Notable mentions:** Crème de la Crème Slack, freelance coworking networks
+- **Action:** Follow up on specific communities mentioned
+
+---
+
 ## 📌 Next Steps
 
 1. [ ] Join ae.fr - create authentic intro post
 2. [ ] Join Discord Entrepreneurs Francophones - lurk first, then engage
-3. [ ] Find & join 2-3 Facebook groups
+3. [ ] Find & join 2-3 Facebook groups (La communauté des auto-entrepreneurs is priority - 61K members)
 4. [ ] Document all feedback received
 5. [ ] Use insights to prioritize features
+6. [ ] **NEW:** Post X threads (drafts ready in docs/x-threads-drafts.md)
+7. [ ] **NEW:** Join CS Francophone Slack
+8. [ ] **NEW:** Submit to Freelicious.fr directory

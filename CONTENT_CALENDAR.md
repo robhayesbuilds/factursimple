@@ -42,8 +42,9 @@
   - Focus: B2C obligations, calendrier, process, case studies
 
 ### Saturday, Feb 9
-- [ ] **Social Media**: Create Twitter/X thread from Article 1 (auto-entrepreneur)
-- [ ] **Social Media**: LinkedIn post summarizing the reform
+- [x] **Social Media**: Create Twitter/X thread from Article 1 (auto-entrepreneur) ✅ (Done Feb 6 - see docs/x-threads-drafts.md)
+- [x] **Social Media**: LinkedIn post summarizing the reform ✅ (Done Feb 6 - see docs/x-threads-drafts.md)
+- [ ] **Post**: Need @robhayesbuilds password to publish
 
 ---
 

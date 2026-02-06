@@ -20,6 +20,14 @@ const articles = [
     featured: true,
   },
   {
+    slug: 'facturation-electronique-plombier-electricien',
+    title: 'Plombier & Électricien : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour plombiers et électriciens auto-entrepreneurs. Dépannage particuliers, syndics, copropriétés, sous-traitance BTP et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '12 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-coiffeur-domicile',
     title: 'Coiffeur à Domicile : Facturation Électronique 2026',
     excerpt: 'Guide complet pour coiffeurs et coiffeuses à domicile. Particuliers vs EHPAD/maisons de retraite, remplacement en salon, produits capillaires et conformité 2026.',

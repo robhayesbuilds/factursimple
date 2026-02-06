@@ -74,6 +74,19 @@ Validate FacturSimple with real French auto-entrepreneurs before building more f
 - **Why:** Another category with French business communities
 - **Action:** Cross-reference with entrepreneur tag
 
+#### 8. **top.gg Entrepreneurs Francophones**
+- **URL:** https://top.gg/servers/574222529330282526
+- **Type:** Discord server
+- **Status:** ⏳ To join
+- **Why:** Listed as active French entrepreneur server - partnerships, advice, projects
+- **Server ID:** 574222529330282526
+
+#### 9. **discord.me/entrepreneur**
+- **URL:** https://discord.me/entrepreneur
+- **Type:** Discord server
+- **Status:** ⏳ To join
+- **Why:** French entrepreneur community with "concrete results" focus
+
 ---
 
 #### 8. **autoentrepreneur.fr Forum** (NEW - Feb 6)

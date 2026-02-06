@@ -336,6 +336,23 @@ These are startup/scale-up focused but members may know auto-entrepreneurs:
 - **Why relevant:** Remote freelancers = our target market
 - **Action:** Join, engage on business/admin topics
 
+### Photography Communities (NEW - Feb 6 PM)
+
+#### 30. **Chassimages Forum**
+- **URL:** https://www.chassimages.com/forum/
+- **Type:** Major French photography forum
+- **Status:** ⏳ To join
+- **Why relevant:** Active discussions on photographer business/AE status, lots of freelance photographers
+- **Active thread found:** Discussion on switching from auteur to auto-entrepreneur
+- **Action:** Join, engage on business/invoicing topics
+
+#### 31. **Les Numériques Forum - Photo**
+- **URL:** https://forum.lesnumeriques.com/
+- **Type:** Tech/photo community forum
+- **Status:** ⏳ To join
+- **Why relevant:** Tech-savvy photographers, active AE discussion threads
+- **Action:** Join, answer questions about e-invoicing
+
 ### Professional & Legal Communities (NEW - Feb 6)
 
 #### 19. **Village-Justice.com** - Legal Professionals Community

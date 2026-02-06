@@ -20,6 +20,14 @@ const articles = [
     featured: true,
   },
   {
+    slug: 'facturation-electronique-chauffeur-taxi',
+    title: 'Chauffeur de Taxi : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour chauffeurs de taxi artisans et locataires. Notes de course, clients particuliers vs entreprises, centrales G7/Taxis Bleus et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '12 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-plombier-electricien',
     title: 'Plombier & Électricien : Facturation Électronique 2026',
     excerpt: 'Guide complet pour plombiers et électriciens auto-entrepreneurs. Dépannage particuliers, syndics, copropriétés, sous-traitance BTP et conformité 2026.',

@@ -20,6 +20,14 @@ const articles = [
     featured: true,
   },
   {
+    slug: 'facturation-electronique-agent-securite',
+    title: 'Agent de Sécurité Indépendant : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour agents de sécurité auto-entrepreneurs. SSIAP, surveillance, événementiel, sous-traitance et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '9 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-moniteur-auto-ecole',
     title: 'Moniteur Auto-École : Facturation Électronique 2026',
     excerpt: 'Guide complet pour moniteurs auto-école indépendants. Facturation aux auto-écoles, élèves particuliers, formation permis PL/FIMO et conformité 2026.',

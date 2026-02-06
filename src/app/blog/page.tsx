@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'facturation-electronique-professeur-particulier',
+    title: 'Facturation Électronique Professeur Particulier : Guide 2026',
+    excerpt: 'Professeurs particuliers, formateurs en ligne : guide complet facturation électronique 2026. CESU, plateformes (Superprof, Preply), cours entreprise et conformité.',
+    date: '2026-02-06',
+    readTime: '12 min',
+    category: 'Guide Métier',
+    featured: true,
+  },
+  {
     slug: 'facturation-electronique-ecommerce-marketplace',
     title: 'Facturation Électronique E-commerce 2026 : Guide Etsy, Vinted Pro, Amazon',
     excerpt: 'Vendeurs Etsy, Vinted Pro, Amazon, Leboncoin Pro : guide complet facturation électronique et e-reporting 2026. Multi-plateformes, fournisseurs et conformité.',
     date: '2026-02-06',
     readTime: '14 min',
     category: 'Guide Métier',
-    featured: true,
   },
   {
     slug: 'facturation-electronique-photographe-graphiste',

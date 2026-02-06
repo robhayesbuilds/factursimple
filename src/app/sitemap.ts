@@ -113,6 +113,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/blog/facturation-electronique-professeur-particulier`,
+      lastModified: new Date('2026-02-06'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     // SEO-optimized articles (Feb 4-5, 2026)
     {
       url: `${baseUrl}/blog/factur-x-format`,

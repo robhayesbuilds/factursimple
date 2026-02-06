@@ -68,6 +68,14 @@ const articles = [
     category: 'Guide Métier',
   },
   {
+    slug: 'facturation-electronique-formateur-professionnel',
+    title: 'Formateur Professionnel : Guide Facturation Électronique 2026',
+    excerpt: 'Guide complet pour formateurs indépendants. OPCO, Qualiopi, sous-traitance OF, CPF, exonération TVA et conformité 2026. Attention : vous êtes très concerné !',
+    date: '2026-02-06',
+    readTime: '13 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-therapeute-bien-etre',
     title: 'Facturation Électronique Thérapeutes & Praticiens Bien-être 2026',
     excerpt: 'Guide complet pour naturopathes, sophrologues, hypnothérapeutes, réflexologues et praticiens du bien-être. Clients particuliers, e-reporting et conformité 2026.',

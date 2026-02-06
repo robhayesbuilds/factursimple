@@ -260,6 +260,25 @@ These are startup/scale-up focused but members may know auto-entrepreneurs:
 - **Why relevant:** Ops people help onboard vendors/freelancers, influence tool choices
 - **Action:** Find invite link, engage on admin/tooling topics
 
+### Professional & Legal Communities (NEW - Feb 6)
+
+#### 19. **Village-Justice.com** - Legal Professionals Community
+- **URL:** https://www.village-justice.com/
+- **Type:** France's #1 legal community (157K+ members)
+- **Members:** 157,500+ (avocats, juristes, notaires, fiscalistes, RH)
+- **Status:** ⏳ To explore
+- **Why relevant:** Legal professionals advise SMBs on compliance; excellent referral channel
+- **Key find:** Active articles about 2026 e-invoicing reform for lawyers
+- **Action:** Contribute expert content, engage in forum discussions
+
+#### 20. **Dolibarr France Forum**
+- **URL:** https://www.dolibarr.fr/forum/
+- **Type:** ERP software user forum (Discourse)
+- **Status:** ⏳ To join
+- **Why relevant:** Dolibarr users are small businesses preparing for 2026 reform
+- **Active thread:** "Facturation électronique - l'échéance approche!" (April 2025)
+- **Action:** Participate in e-invoicing discussions, offer FacturSimple as complementary solution
+
 ### Additional Resources Found
 
 #### 16. **Freelicious.fr** - Freelance Media

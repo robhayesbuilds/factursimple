@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'guide-expert-comptable-auto-entrepreneur',
+    title: 'Guide Expert-Comptable : Accompagner vos Clients Auto-Entrepreneurs vers 2026',
+    excerpt: 'Guide pratique pour les experts-comptables : comment accompagner vos clients auto-entrepreneurs dans la transition vers la facturation électronique obligatoire.',
+    date: '2026-02-06',
+    readTime: '12 min',
+    category: 'Guide Pro',
+    featured: true,
+  },
+  {
     slug: 'facturation-electronique-therapeute-bien-etre',
     title: 'Facturation Électronique Thérapeutes & Praticiens Bien-être 2026',
     excerpt: 'Guide complet pour naturopathes, sophrologues, hypnothérapeutes, réflexologues et praticiens du bien-être. Clients particuliers, e-reporting et conformité 2026.',
     date: '2026-02-06',
     readTime: '10 min',
     category: 'Guide Métier',
-    featured: true,
   },
   {
     slug: 'facturation-electronique-redacteur-web-copywriter',
@@ -34,6 +42,14 @@ const articles = [
     date: '2026-02-06',
     readTime: '10 min',
     category: 'International',
+  },
+  {
+    slug: 'facturation-electronique-agent-immobilier',
+    title: 'Agent Immobilier : Préparez la Facturation Électronique 2026',
+    excerpt: 'Guide complet pour mandataires immobiliers, négociateurs et agents indépendants (IAD, Safti, Capifrance...). Honoraires, commissions et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '10 min',
+    category: 'Guide Métier',
   },
   {
     slug: 'facturation-electronique-agent-commercial',

@@ -60,6 +60,14 @@ const articles = [
     category: 'Guide Métier',
   },
   {
+    slug: 'facturation-electronique-pet-sitter-garde-animaux',
+    title: 'Pet Sitter & Garde d\'Animaux : Guide Facturation 2026',
+    excerpt: 'Guide complet pour pet sitters, dog walkers et gardes d\'animaux. Plateformes (Rover, Animaute), clients particuliers vs professionnels et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '11 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-therapeute-bien-etre',
     title: 'Facturation Électronique Thérapeutes & Praticiens Bien-être 2026',
     excerpt: 'Guide complet pour naturopathes, sophrologues, hypnothérapeutes, réflexologues et praticiens du bien-être. Clients particuliers, e-reporting et conformité 2026.',

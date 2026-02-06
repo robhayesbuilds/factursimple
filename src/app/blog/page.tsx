@@ -11,13 +11,29 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'facturation-electronique-clients-etrangers',
+    title: 'Clients Étrangers et Facturation Électronique 2026 : Êtes-vous Vraiment Concerné ?',
+    excerpt: 'Freelance avec clients internationaux (USA, UE, plateformes étrangères) ? Bonne nouvelle : vous n\'êtes probablement PAS concerné par l\'e-invoicing. Explications.',
+    date: '2026-02-06',
+    readTime: '10 min',
+    category: 'International',
+    featured: true,
+  },
+  {
+    slug: 'facturation-electronique-agent-commercial',
+    title: 'Agent Commercial : Préparez la Facturation Électronique 2026',
+    excerpt: 'Guide complet pour agents commerciaux indépendants et VRP multicartes. Commissions, mandants multiples, mandants étrangers et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '9 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-developpeur-freelance',
     title: 'Développeurs Freelance : Préparez la Facturation Électronique 2026',
     excerpt: 'Guide complet pour développeurs web, devs full-stack, DevOps et freelances IT. Clients internationaux, plateformes (Malt, Comet), récurrence et conformité 2026.',
     date: '2026-02-06',
     readTime: '10 min',
     category: 'Guide Métier',
-    featured: true,
   },
   {
     slug: 'facturation-electronique-professions-sante',

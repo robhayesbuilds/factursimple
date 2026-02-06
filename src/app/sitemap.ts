@@ -72,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // New articles (Feb 6, 2026)
     {
+      url: `${baseUrl}/blog/facturation-electronique-agent-commercial`,
+      lastModified: new Date('2026-02-06'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog/facturation-electronique-developpeur-freelance`,
       lastModified: new Date('2026-02-06'),
       changeFrequency: 'monthly',
@@ -259,6 +265,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Article #24 - Feb 6, 2026
     {
       url: `${baseUrl}/blog/facturation-electronique-vtc-chauffeur-prive`,
+      lastModified: new Date('2026-02-06'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    // Article #30 - International Clients - Feb 6, 2026
+    {
+      url: `${baseUrl}/blog/facturation-electronique-clients-etrangers`,
       lastModified: new Date('2026-02-06'),
       changeFrequency: 'monthly',
       priority: 0.9,

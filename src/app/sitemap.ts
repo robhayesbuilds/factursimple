@@ -195,5 +195,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // Article #21 - Feb 6, 2026
+    {
+      url: `${baseUrl}/blog/facturation-electronique-artisan-btp`,
+      lastModified: new Date('2026-02-06'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 }

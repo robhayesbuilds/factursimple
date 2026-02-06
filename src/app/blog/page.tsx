@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'facturation-electronique-artisan-btp',
+    title: 'Facturation Électronique Artisan BTP 2026 : Le Guide Complet',
+    excerpt: 'Plombiers, électriciens, maçons, peintres... Guide spécial artisans du bâtiment : devis, factures de situation, acomptes, retenue de garantie et conformité 2026.',
+    date: '2026-02-06',
+    readTime: '12 min',
+    category: 'Guide Métier',
+    featured: true,
+  },
+  {
     slug: 'pilote-dgfip-facturation-electronique',
     title: 'Pilote DGFIP 2026 : Le Test en Conditions Réelles de la Facturation Électronique',
     excerpt: 'La DGFIP lance un projet pilote en conditions réelles. Découvrez les outils officiels (quiz impots.gouv, vidéo explicative) pour vous préparer.',
     date: '2026-02-06',
     readTime: '7 min',
     category: 'Actualité',
-    featured: true,
   },
   {
     slug: 'facture-proforma-auto-entrepreneur',

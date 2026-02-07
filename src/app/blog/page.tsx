@@ -28,6 +28,14 @@ const articles = [
     category: 'Guide Métier',
   },
   {
+    slug: 'facturation-electronique-architecte-decorateur',
+    title: 'Architecte & Décorateur : Facturation Électronique 2026',
+    excerpt: 'Guide complet pour architectes DPLG/HMONP, architectes d\'intérieur et décorateurs. Maisons individuelles, promoteurs, copropriétés, hôtels et conformité 2026.',
+    date: '2026-02-07',
+    readTime: '13 min',
+    category: 'Guide Métier',
+  },
+  {
     slug: 'facturation-electronique-estheticienne-domicile',
     title: 'Esthéticienne à Domicile : Facturation Électronique 2026',
     excerpt: 'Guide complet pour esthéticiennes, prothésistes ongulaires et maquilleuses à domicile. Clients particuliers, EHPAD, sous-traitance salon et conformité 2026.',
